@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE QUIZ - Website Quiz Pelajaran SMA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;family=Montserrat:wght@500;700&amp;display=swap" rel="stylesheet">
+  <script src="/_sdk/element_sdk.js"></script>
+  
+  
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+     <link rel="stylesheet" href="styles.css">
+</head>
+ <body><!-- Landing Page -->
+  <div id="landingPage" class="page active landing-page">
+   <div class="cloud" style="width: 100px; height: 50px; top: 15%; left: -100px; animation-delay: 0s;"></div>
+   <div class="cloud" style="width: 80px; height: 40px; top: 35%; left: -80px; animation-delay: 5s;"></div>
+   <div class="cloud" style="width: 120px; height: 60px; top: 60%; left: -120px; animation-delay: 10s;"></div>
+   <div class="cloud" style="width: 90px; height: 45px; top: 80%; left: -90px; animation-delay: 15s;"></div>
+   <div class="floating-elements">
+    <div class="float-icon" style="top: 10%; left: 5%; font-size: 60px;">
+     ??
+    </div>
+    <div class="float-icon" style="top: 20%; right: 10%; font-size: 50px;">
+     ?
+    </div>
+    <div class="float-icon" style="top: 60%; left: 15%; font-size: 55px;">
+     ??
+    </div>
+    <div class="float-icon" style="bottom: 15%; right: 20%; font-size: 45px;">
+     ??
+    </div>
+    <div class="float-icon" style="top: 40%; right: 5%; font-size: 50px;">
+     ??
+    </div>
+    <div class="float-icon" style="bottom: 25%; left: 8%; font-size: 40px;">
+     ??
+    </div>
+   </div>
+   <div class="header">
+    <div class="logo">
+     <div class="logo-icon">
+      ????
+     </div>
+     <div class="logo-text" id="websiteTitle">
+      THE QUIZ
+     </div>
+    </div>
+   </div>
+   <div class="hero-section">
+    <div class="hero-content">
+     <div class="hero-illustration">
+      <div class="student-illustration">
+       <svg width="280" height="280" viewbox="0 0 280 280"><!-- Woody Character --> <ellipse cx="140" cy="95" rx="42" ry="48" fill="#FFD93D" /> <circle cx="140" cy="85" r="38" fill="#FFEAA7" /> <rect x="125" y="70" width="30" height="15" rx="7" fill="#8B4513" /> <circle cx="130" cy="85" r="5" fill="#333" /> <circle cx="150" cy="85" r="5" fill="#333" /> <path d="M 130 95 Q 140 102 150 95" stroke="#333" stroke-width="3" fill="none" /> <rect x="110" y="130" width="60" height="85" rx="15" fill="#FF6B6B" /> <rect x="100" y="140" width="80" height="60" rx="10" fill="#FFD93D" opacity="0.9" /> <rect x="85" y="215" width="30" height="55" rx="10" fill="#4A90E2" /> <rect x="165" y="215" width="30" height="55" rx="10" fill="#4A90E2" /> <circle cx="130" cy="145" r="4" fill="#FFF" /> <circle cx="150" cy="145" r="4" fill="#FFF" /> <text x="140" y="40" font-size="28" text-anchor="middle">
+         ??
+        </text> <text x="200" y="100" font-size="30">
+         ?
+        </text> <text x="80" y="120" font-size="26">
+         ??
+        </text> <text x="70" y="200" font-size="22">
+         ??
+        </text> <text x="190" y="180" font-size="22">
+         ??
+        </text>
+       </svg>
+      </div>
+     </div>
+     <h1 class="hero-title" id="heroTitle">SELAMAT DATANG DI THE QUIZ  Tantang Pengetahuanmu Sekarang!</h1>
+     <p class="hero-subtitle" id="heroSubtitle">Quiz pelajaran SMA dengan tampilan interaktif, soal menarik, dan skor langsung.</p><button class="cta-button" id="startButton" onclick="showSubjects()"> <span id="ctaButtonText">START QUIZ</span> </button>
+    </div>
+   </div>
+   <div class="subjects-section" id="subjectsSection" style="display: none;">
+    <h2 class="section-title">Pilih Mata Pelajaran</h2>
+    <div class="subjects-grid">
+     <div class="subject-card" onclick="startQuiz('Matematika')">
+      <div class="subject-icon">
+       ??
+      </div>
+      <div class="subject-name">
+       Matematika
+      </div>
+      <div class="subject-desc">
+       Logika &amp; Perhitungan
+      </div>
+     </div>
+     <div class="subject-card" onclick="startQuiz('Bahasa Indonesia')">
+      <div class="subject-icon">
+       ??
+      </div>
+      <div class="subject-name">
+       Bahasa Indonesia
+      </div>
+      <div class="subject-desc">
+       Bahasa &amp; Sastra
+      </div>
+     </div>
+     <div class="subject-card" onclick="startQuiz('Bahasa Inggris')">
+      <div class="subject-icon">
+       ??
+      </div>
+      <div class="subject-name">
+       Bahasa Inggris
+      </div>
+      <div class="subject-desc">
+       English Language
+      </div>
+     </div>
+     <div class="subject-card" onclick="startQuiz('Biologi')">
+      <div class="subject-icon">
+       ??
+      </div>
+      <div class="subject-name">
+       Biologi
+      </div>
+      <div class="subject-desc">
+       Kehidupan &amp; Organisme
+      </div>
+     </div>
+     <div class="subject-card" onclick="startQuiz('Fisika')">
+      <div class="subject-icon">
+       ??
+      </div>
+      <div class="subject-name">
+       Fisika
+      </div>
+      <div class="subject-desc">
+       Gaya &amp; Energi
+      </div>
+     </div>
+     <div class="subject-card" onclick="startQuiz('Sejarah')">
+      <div class="subject-icon">
+       ???
+      </div>
+      <div class="subject-name">
+       Sejarah
+      </div>
+      <div class="subject-desc">
+       Peristiwa &amp; Tokoh
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Quiz Page -->
+  <div id="quizPage" class="page quiz-page">
+   <div class="quiz-header">
+    <div class="quiz-subject" id="quizSubject">
+     Matematika
+    </div>
+    <div class="timer" id="timer">
+     ?? <span id="timeLeft">15:00</span>
+    </div>
+   </div>
+   <div class="progress-section">
+    <div class="progress-text">
+     Soal <span id="currentQuestion">1</span> dari <span id="totalQuestions">20</span>
+    </div>
+    <div class="progress-bar-container">
+     <div class="progress-bar" id="progressBar" style="width: 5%;"></div>
+    </div>
+   </div>
+   <div class="question-card">
+    <div class="question-text" id="questionText"></div>
+    <div class="options" id="optionsContainer"></div>
+   </div>
+   <div class="quiz-navigation"><button class="nav-button" onclick="previousQuestion()" id="prevBtn">Sebelumnya</button> <button class="nav-button primary" onclick="nextQuestion()" id="nextBtn">Selanjutnya</button>
+   </div>
+  </div><!-- Result Page -->
+  <div id="resultPage" class="page result-page">
+   <div class="result-card">
+    <div class="result-icon">
+     ??
+    </div>
+    <div class="score-display" id="scoreDisplay">
+     85/100
+    </div>
+    <div class="badge" id="badge">
+     EXCELLENT!
+    </div>
+    <div class="stats">
+     <div class="stat-item">
+      <div class="stat-value" id="correctCount">
+       17
+      </div>
+      <div class="stat-label">
+       Jawaban Benar
+      </div>
+     </div>
+     <div class="stat-item">
+      <div class="stat-value" id="wrongCount">
+       3
+      </div>
+      <div class="stat-label">
+       Jawaban Salah
+      </div>
+     </div>
+    </div>
+    <div class="result-actions"><button class="action-button" onclick="retryQuiz()">?? Coba Lagi</button> <button class="action-button secondary" onclick="goHome()">?? Kembali</button>
+    </div>
+   </div>
+  </div>
+  
+     <script src="script.js"></script>
+</body>
+</html>
